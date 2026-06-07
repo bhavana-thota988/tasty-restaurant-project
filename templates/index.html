@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="bg-black text-white min-h-screen flex items-center justify-center">
+
+    <div class="text-center px-6 max-w-4xl">
+
+        <span class="bg-red-600 px-4 py-2 rounded-full text-sm font-semibold">
+            Welcome to Tasty Restaurant
+        </span>
+
+        <h1 class="text-5xl md:text-7xl font-bold mt-6 leading-tight">
+            Experience The Best
+            <span class="text-red-500">Food & Dining</span>
+        </h1>
+
+        <p class="text-gray-300 text-lg md:text-xl mt-6 max-w-2xl mx-auto">
+            Enjoy delicious cuisines, world-class chefs, and an unforgettable
+            dining experience crafted with passion and excellence.
+        </p>
+
+        <div class="mt-10 flex flex-col md:flex-row gap-4 justify-center">
+
+            <a href="/menu"
+               class="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-lg font-semibold text-lg">
+                Explore Menu
+            </a>
+
+            <a href="/booking"
+               class="border border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-black">
+                Book a Table
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
+<!-- Stats -->
+<section class="py-20 bg-black text-white text-center">
+
+  <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8">
+
+    <div>
+      <h2 class="text-4xl font-bold text-red-500">50K+</h2>
+      <p>Customers</p>
+    </div>
+
+    <div>
+      <h2 class="text-4xl font-bold text-red-500">15+</h2>
+      <p>Years</p>
+    </div>
+
+    <div>
+      <h2 class="text-4xl font-bold text-red-500">100+</h2>
+      <p>Dishes</p>
+    </div>
+
+    <div>
+      <h2 class="text-4xl font-bold text-red-500">4.9★</h2>
+      <p>Rating</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Chefs -->
+<section class="py-20 bg-white text-center">
+
+  <h2 class="text-4xl font-bold mb-10">Our Chefs</h2>
+
+  <div class="container mx-auto grid md:grid-cols-3 gap-8 px-6">
+
+    <div>
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-2xl mb-3">
+      <h3 class="font-bold text-xl">Michael</h3>
+    </div>
+
+    <div>
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-2xl mb-3">
+      <h3 class="font-bold text-xl">Sophia</h3>
+    </div>
+
+    <div>
+      <img src="https://randomuser.me/api/portraits/men/50.jpg" class="rounded-2xl mb-3">
+      <h3 class="font-bold text-xl">David</h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- Offer -->
+<section class="py-20 bg-red-600 text-white text-center">
+
+  <h2 class="text-4xl font-bold mb-4">Weekend Offer</h2>
+  <p class="mb-6">20% OFF on premium dishes</p>
+
+  <a href="/booking" class="bg-white text-red-600 px-6 py-3 rounded-lg font-bold">
+    Reserve
+  </a>
+
+</section>
+
+<!-- Gallery -->
+<section class="py-20 bg-gray-100 text-center">
+
+  <h2 class="text-4xl font-bold mb-10">Gallery</h2>
+
+  <div class="container mx-auto grid md:grid-cols-4 gap-4 px-6">
+
+    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" class="rounded-xl">
+    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b" class="rounded-xl">
+    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0" class="rounded-xl">
+    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" class="rounded-xl">
+
+  </div>
+</section>
+
+<!-- Events -->
+<section class="py-20 bg-black text-white text-center">
+
+  <h2 class="text-4xl font-bold mb-10">Events</h2>
+
+  <div class="container mx-auto grid md:grid-cols-3 gap-6 px-6">
+
+    <div class="bg-gray-900 p-6 rounded-xl">Live Music</div>
+    <div class="bg-gray-900 p-6 rounded-xl">Family Dinner</div>
+    <div class="bg-gray-900 p-6 rounded-xl">Chef Week</div>
+
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="py-20 bg-white text-center">
+
+  <h2 class="text-4xl font-bold mb-6">Newsletter</h2>
+
+  <div class="max-w-md mx-auto flex gap-3">
+
+    <input type="email" placeholder="Email"
+    class="flex-1 border p-3 rounded-lg">
+
+    <button class="bg-red-600 text-white px-5 rounded-lg">
+      Subscribe
+    </button>
+
+  </div>
+
+</section>

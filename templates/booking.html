@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="relative h-[50vh] flex items-center justify-center text-center text-white bg-cover bg-center"
+style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');">
+
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <div class="relative z-10">
+
+        <h1 class="text-6xl md:text-7xl font-bold mb-4">
+            Reserve Your Table
+        </h1>
+
+        <p class="text-xl text-gray-200">
+            Experience luxury dining at Tasty Restaurant
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Booking Form -->
+<section class="py-24 bg-gray-100">
+
+    <div class="max-w-5xl mx-auto px-8">
+
+        <div class="grid md:grid-cols-2 gap-12">
+
+            <!-- Left Side -->
+
+            <div>
+
+                <h2 class="text-5xl font-bold mb-8">
+                    Book A Table
+                </h2>
+
+                <p class="text-gray-600 text-lg leading-8 mb-8">
+                    Reserve your table online and enjoy an unforgettable
+                    dining experience with premium food, elegant ambiance,
+                    and world-class hospitality.
+                </p>
+
+                <div class="space-y-6">
+
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-bold">📍 Location</h3>
+                        <p class="mt-2">Hyderabad, India</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-bold">📞 Phone</h3>
+                        <p class="mt-2">+91 9876543210</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-bold">🕒 Opening Hours</h3>
+                        <p class="mt-2">10:00 AM - 11:00 PM</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Side Form -->
+
+            <div class="bg-white shadow-2xl rounded-3xl p-10">
+
+                <form method="POST" id="bookingForm">
+
+                    <h3 class="text-3xl font-bold mb-8 text-center">
+                        Reservation Form
+                    </h3>
+
+                    <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                    class="w-full border p-4 rounded-xl mb-4">
+
+                    <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                    class="w-full border p-4 rounded-xl mb-4">
+
+                    <input
+                    type="date"
+                    name="date"
+                    required
+                    class="w-full border p-4 rounded-xl mb-4">
+
+                    <input
+                    type="time"
+                    name="time"
+                    required
+                    class="w-full border p-4 rounded-xl mb-4">
+
+                    <input
+                    type="number"
+                    name="guests"
+                    min="1"
+                    placeholder="Number of Guests"
+                    required
+                    class="w-full border p-4 rounded-xl mb-4">
+
+                    <select
+                    class="w-full border p-4 rounded-xl mb-4">
+
+                        <option>Indoor Dining</option>
+                        <option>Outdoor Dining</option>
+                        <option>Private Room</option>
+
+                    </select>
+
+                    <textarea
+                    rows="4"
+                    placeholder="Special Request"
+                    class="w-full border p-4 rounded-xl mb-6"></textarea>
+
+                    <button
+                    type="submit"
+                    class="w-full bg-red-600 hover:bg-red-700 text-white py-4 rounded-xl text-lg font-bold transition">
+
+                        Reserve Table
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Why Reserve -->
+<section class="py-24 bg-black text-white">
+
+    <div class="container mx-auto px-8">
+
+        <h2 class="text-5xl font-bold text-center mb-16">
+            Why Reserve With Us?
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <div class="bg-gray-900 p-8 rounded-3xl">
+                <h3 class="text-3xl font-bold mb-4">🍽 Premium Dining</h3>
+                <p>Luxury ambiance and unforgettable food experience.</p>
+            </div>
+
+            <div class="bg-gray-900 p-8 rounded-3xl">
+                <h3 class="text-3xl font-bold mb-4">👨‍🍳 Expert Chefs</h3>
+                <p>World-class chefs preparing every dish with perfection.</p>
+            </div>
+
+            <div class="bg-gray-900 p-8 rounded-3xl">
+                <h3 class="text-3xl font-bold mb-4">⭐ VIP Service</h3>
+                <p>Exceptional hospitality and personalized attention.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

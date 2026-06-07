@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Hero -->
+<section class="relative h-[60vh] flex items-center justify-center text-center text-white bg-cover bg-center"
+style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');">
+
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <div class="relative z-10 max-w-3xl px-6">
+
+        <h1 class="text-5xl md:text-6xl font-bold mb-4">
+            About Tasty Restaurant
+        </h1>
+
+        <p class="text-lg text-gray-200">
+            Exceptional dining experience with premium food and service.
+        </p>
+
+    </div>
+</section>
+
+<!-- Story -->
+<section class="py-20 bg-white">
+
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+        <div>
+            <h2 class="text-4xl font-bold mb-6">Our Story</h2>
+
+            <p class="text-gray-600 leading-7 mb-4">
+                We started with a simple vision — to serve quality food with love and consistency.
+            </p>
+
+            <p class="text-gray-600 leading-7">
+                Today, we are known for taste, service, and customer satisfaction.
+            </p>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9"
+        class="rounded-2xl shadow-lg">
+    </div>
+</section>
+
+<!-- Stats -->
+<section class="py-20 bg-red-600 text-white">
+
+    <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8 text-center">
+
+        <div>
+            <h2 class="text-4xl font-bold">15+</h2>
+            <p>Years</p>
+        </div>
+
+        <div>
+            <h2 class="text-4xl font-bold">50K+</h2>
+            <p>Customers</p>
+        </div>
+
+        <div>
+            <h2 class="text-4xl font-bold">100+</h2>
+            <p>Dishes</p>
+        </div>
+
+        <div>
+            <h2 class="text-4xl font-bold">25+</h2>
+            <p>Chefs</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Mission -->
+<section class="py-20 bg-gray-100">
+
+    <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white p-8 rounded-2xl shadow">
+            <h3 class="text-2xl font-bold mb-3">Mission</h3>
+            <p class="text-gray-600">Deliver quality food and great service.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow">
+            <h3 class="text-2xl font-bold mb-3">Vision</h3>
+            <p class="text-gray-600">Become a trusted global dining brand.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow">
+            <h3 class="text-2xl font-bold mb-3">Values</h3>
+            <p class="text-gray-600">Quality, trust, and customer happiness.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 bg-red-600 text-white text-center">
+
+    <h2 class="text-4xl font-bold mb-4">
+        Book Your Table Today
+    </h2>
+
+    <p class="mb-8">
+        Enjoy premium dining experience with us.
+    </p>
+
+    <a href="/booking"
+    class="bg-white text-red-600 px-8 py-3 rounded-lg font-bold">
+        Book Now
+    </a>
+
+</section>
+
+{% endblock %}

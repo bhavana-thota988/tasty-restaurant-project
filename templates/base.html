@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Tasty Restaurant{% endblock %}</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-black text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="/" class="text-3xl font-bold text-red-500">
+                Tasty
+            </a>
+
+            <div class="hidden md:flex gap-6 items-center">
+                <a href="/" class="hover:text-red-500">Home</a>
+                <a href="/about" class="hover:text-red-500">About</a>
+                <a href="/menu" class="hover:text-red-500">Menu</a>
+                <a href="/gallery" class="hover:text-red-500">Gallery</a>
+                <a href="/booking" class="hover:text-red-500">Booking</a>
+
+                <a href="/login"
+                   class="bg-red-600 px-4 py-2 rounded-lg hover:bg-red-700">
+                    Login
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Footer -->
+    <footer class="bg-black text-white mt-16 py-10">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold text-red-500 mb-2">
+                Tasty Restaurant
+            </h3>
+
+            <p class="text-gray-400">
+                Delicious Food • Great Experience
+            </p>
+
+            <p class="text-gray-500 mt-4">
+                © 2026 Tasty Restaurant. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+</body>
+</html>

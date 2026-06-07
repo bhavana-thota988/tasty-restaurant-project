@@ -1,0 +1,296 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Hero Section -->
+
+<section class="relative h-[45vh] flex items-center justify-center text-center text-white bg-cover bg-center"
+style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');">
+
+```
+<div class="absolute inset-0 bg-black/70"></div>
+
+<div class="relative z-10">
+
+    <h1 class="text-7xl font-bold mb-4">
+        Create Account
+    </h1>
+
+    <p class="text-xl">
+        Join The Tasty Restaurant Family
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- Register Section -->
+
+<section class="py-24 bg-gray-100">
+
+```
+<div class="container mx-auto px-8">
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+
+        <!-- Left Side -->
+
+        <div class="bg-black text-white rounded-3xl p-12">
+
+            <h2 class="text-5xl font-bold mb-8">
+                Become A Member
+            </h2>
+
+            <p class="text-xl text-gray-300 leading-9 mb-10">
+
+                Register now to enjoy exclusive offers,
+                priority reservations, VIP dining experiences,
+                reward points and premium restaurant services.
+
+            </p>
+
+            <div class="space-y-8">
+
+                <div class="flex items-center gap-5">
+
+                    <div class="text-4xl">🎁</div>
+
+                    <div>
+
+                        <h3 class="text-2xl font-bold">
+                            Special Rewards
+                        </h3>
+
+                        <p class="text-gray-400">
+                            Earn points with every reservation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="flex items-center gap-5">
+
+                    <div class="text-4xl">⭐</div>
+
+                    <div>
+
+                        <h3 class="text-2xl font-bold">
+                            VIP Membership
+                        </h3>
+
+                        <p class="text-gray-400">
+                            Get access to premium dining events.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="flex items-center gap-5">
+
+                    <div class="text-4xl">📅</div>
+
+                    <div>
+
+                        <h3 class="text-2xl font-bold">
+                            Priority Booking
+                        </h3>
+
+                        <p class="text-gray-400">
+                            Book tables before everyone else.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="flex items-center gap-5">
+
+                    <div class="text-4xl">🍽</div>
+
+                    <div>
+
+                        <h3 class="text-2xl font-bold">
+                            Exclusive Menu
+                        </h3>
+
+                        <p class="text-gray-400">
+                            Access member-only dishes and offers.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Register Form -->
+
+        <div class="bg-white rounded-3xl shadow-2xl p-12">
+
+            <h2 class="text-4xl font-bold text-center mb-10">
+                Register Now
+            </h2>
+
+            <form method="POST">
+
+                <input
+                type="text"
+                name="fullname"
+                placeholder="Full Name"
+                required
+                class="w-full border p-5 rounded-xl mb-5">
+
+                <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+                class="w-full border p-5 rounded-xl mb-5">
+
+                <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                required
+                class="w-full border p-5 rounded-xl mb-5">
+
+                <input
+                type="text"
+                name="city"
+                placeholder="City"
+                class="w-full border p-5 rounded-xl mb-5">
+
+                <input
+                type="password"
+                name="password"
+                placeholder="Create Password"
+                required
+                class="w-full border p-5 rounded-xl mb-5">
+
+                <input
+                type="password"
+                name="confirm_password"
+                placeholder="Confirm Password"
+                required
+                class="w-full border p-5 rounded-xl mb-5">
+
+                <label class="flex items-center gap-3 mb-8">
+
+                    <input type="checkbox" required>
+
+                    <span>
+                        I agree to the Terms & Conditions
+                    </span>
+
+                </label>
+
+                <button
+                type="submit"
+                class="w-full bg-red-600 hover:bg-red-700 text-white py-5 rounded-xl text-xl font-bold">
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+            <div class="text-center mt-8">
+
+                <p class="text-gray-600">
+
+                    Already have an account?
+
+                </p>
+
+                <a href="/login"
+                class="text-red-600 font-bold text-lg">
+
+                    Login Here
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- Benefits Section -->
+
+<section class="py-24 bg-black text-white">
+
+```
+<div class="container mx-auto px-8">
+
+    <h2 class="text-5xl font-bold text-center mb-16">
+        Membership Benefits
+    </h2>
+
+    <div class="grid md:grid-cols-4 gap-8">
+
+        <div class="bg-gray-900 p-8 rounded-3xl text-center">
+
+            <h3 class="text-2xl font-bold mb-4">
+                🎁 Rewards
+            </h3>
+
+            <p>
+                Earn reward points on every booking.
+            </p>
+
+        </div>
+
+        <div class="bg-gray-900 p-8 rounded-3xl text-center">
+
+            <h3 class="text-2xl font-bold mb-4">
+                💰 Discounts
+            </h3>
+
+            <p>
+                Member-only discounts and offers.
+            </p>
+
+        </div>
+
+        <div class="bg-gray-900 p-8 rounded-3xl text-center">
+
+            <h3 class="text-2xl font-bold mb-4">
+                🍽 VIP Dining
+            </h3>
+
+            <p>
+                Access exclusive dining experiences.
+            </p>
+
+        </div>
+
+        <div class="bg-gray-900 p-8 rounded-3xl text-center">
+
+            <h3 class="text-2xl font-bold mb-4">
+                ⭐ Premium Access
+            </h3>
+
+            <p>
+                Priority reservations and premium support.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+{% endblock %}

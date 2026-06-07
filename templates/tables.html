@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tables Status</title>
+</head>
+<body>
+
+<h2>Restaurant Table Status</h2>
+
+{% for r in reservations %}
+  <p>
+    Table {{ r.table_no }} -
+    {% if r.status == "reserved" %}
+      🔴 Reserved
+    {% else %}
+      🟢 Available
+    {% endif %}
+  </p>
+{% endfor %}
+
+</body>
+</html>

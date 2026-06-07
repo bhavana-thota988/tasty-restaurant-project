@@ -1,0 +1,262 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="relative h-[60vh] flex items-center justify-center text-center text-white bg-cover bg-center"
+style="background-image:url('https://images.unsplash.com/photo-1559339352-11d035aa65de');">
+
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <div class="relative z-10">
+
+        <h1 class="text-7xl font-bold mb-6">
+            Meet Our Expert Chefs
+        </h1>
+
+        <p class="text-2xl text-gray-200">
+            Passion • Creativity • Culinary Excellence
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Introduction -->
+<section class="py-24 bg-white">
+
+    <div class="container mx-auto px-8 text-center">
+
+        <h2 class="text-5xl font-bold mb-8">
+            Culinary Masters Behind Every Dish
+        </h2>
+
+        <p class="max-w-4xl mx-auto text-lg text-gray-600 leading-9">
+            Our award-winning chefs bring years of international experience,
+            innovative techniques, and a passion for creating unforgettable
+            dining experiences. Every dish reflects their dedication to quality
+            and perfection.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Chef Cards -->
+<section class="py-24 bg-gray-100">
+
+    <div class="container mx-auto px-8">
+
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <!-- Chef 1 -->
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+
+                <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                class="w-full h-80 object-cover">
+
+                <div class="p-8 text-center">
+
+                    <h3 class="text-3xl font-bold">
+                        Chef Michael Anderson
+                    </h3>
+
+                    <p class="text-red-600 text-xl mt-2">
+                        Master Chef
+                    </p>
+
+                    <p class="mt-6 text-gray-600 leading-8">
+                        Over 15 years of experience in international cuisine,
+                        specializing in luxury dining and gourmet creations.
+                    </p>
+
+                    <div class="mt-6">
+                        <span class="bg-red-100 text-red-600 px-4 py-2 rounded-full">
+                            Italian Cuisine
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Chef 2 -->
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+
+                <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                class="w-full h-80 object-cover">
+
+                <div class="p-8 text-center">
+
+                    <h3 class="text-3xl font-bold">
+                        Chef Sophia Carter
+                    </h3>
+
+                    <p class="text-red-600 text-xl mt-2">
+                        Executive Chef
+                    </p>
+
+                    <p class="mt-6 text-gray-600 leading-8">
+                        Renowned for creating innovative menus and bringing
+                        modern culinary artistry to every plate.
+                    </p>
+
+                    <div class="mt-6">
+                        <span class="bg-red-100 text-red-600 px-4 py-2 rounded-full">
+                            French Cuisine
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Chef 3 -->
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+
+                <img
+                src="https://randomuser.me/api/portraits/men/50.jpg"
+                class="w-full h-80 object-cover">
+
+                <div class="p-8 text-center">
+
+                    <h3 class="text-3xl font-bold">
+                        Chef David Wilson
+                    </h3>
+
+                    <p class="text-red-600 text-xl mt-2">
+                        Sous Chef
+                    </p>
+
+                    <p class="mt-6 text-gray-600 leading-8">
+                        Expert in Asian fusion cuisine and known for crafting
+                        visually stunning dishes.
+                    </p>
+
+                    <div class="mt-6">
+                        <span class="bg-red-100 text-red-600 px-4 py-2 rounded-full">
+                            Asian Fusion
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Achievements -->
+<section class="py-24 bg-black text-white">
+
+    <div class="container mx-auto px-8">
+
+        <h2 class="text-5xl font-bold text-center mb-16">
+            Awards & Achievements
+        </h2>
+
+        <div class="grid md:grid-cols-4 gap-10 text-center">
+
+            <div>
+                <h3 class="text-6xl font-bold text-red-500">15+</h3>
+                <p class="mt-4">Years Experience</p>
+            </div>
+
+            <div>
+                <h3 class="text-6xl font-bold text-red-500">25+</h3>
+                <p class="mt-4">Professional Chefs</p>
+            </div>
+
+            <div>
+                <h3 class="text-6xl font-bold text-red-500">50+</h3>
+                <p class="mt-4">International Awards</p>
+            </div>
+
+            <div>
+                <h3 class="text-6xl font-bold text-red-500">100+</h3>
+                <p class="mt-4">Signature Dishes</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Specialties -->
+<section class="py-24 bg-white">
+
+    <div class="container mx-auto px-8">
+
+        <h2 class="text-5xl font-bold text-center mb-16">
+            Our Culinary Specialties
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <div class="bg-gray-100 p-10 rounded-3xl text-center">
+
+                <h3 class="text-3xl font-bold mb-4">
+                    🍝 Italian Cuisine
+                </h3>
+
+                <p class="text-gray-600">
+                    Authentic flavors crafted with traditional recipes.
+                </p>
+
+            </div>
+
+            <div class="bg-gray-100 p-10 rounded-3xl text-center">
+
+                <h3 class="text-3xl font-bold mb-4">
+                    🥩 Premium Grills
+                </h3>
+
+                <p class="text-gray-600">
+                    Perfectly grilled meats using premium ingredients.
+                </p>
+
+            </div>
+
+            <div class="bg-gray-100 p-10 rounded-3xl text-center">
+
+                <h3 class="text-3xl font-bold mb-4">
+                    🍣 Asian Fusion
+                </h3>
+
+                <p class="text-gray-600">
+                    Creative combinations of modern and traditional flavors.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="py-24 bg-red-600 text-white text-center">
+
+    <h2 class="text-5xl font-bold mb-6">
+        Experience Chef-Crafted Excellence
+    </h2>
+
+    <p class="text-xl mb-10">
+        Reserve your table and enjoy dishes prepared by our award-winning chefs.
+    </p>
+
+    <a href="/booking"
+    class="bg-white text-red-600 px-10 py-4 rounded-xl font-bold text-lg">
+        Book Your Table
+    </a>
+
+</section>
+
+{% endblock %}
